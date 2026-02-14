@@ -71,17 +71,49 @@ body {
 }
 
 .logo_img {
-    
+    animation: logo_img 2s ease-out forwards;
+
     width: 35vw;
     height: auto;
 }
 
+
+
 .front_page_subtitle {
     color: white;
+    animation: logo_img_afk 5s ease-in-out infinite;
     font-weight: 100;
     font-size: 1.6vw;
     text-align: center;
 }
+
+@keyframes logo_img {
+    from {
+        opacity: 0.8;
+        transform: translateY(80px) scale(0.7);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        
+    }
+}
+
+@keyframes logo_img_afk {
+    0% {
+        
+        transform: translateY(0px);
+    }
+    50% {
+        
+        transform: translateY(10px) ;
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
 
 
 /* =========================
