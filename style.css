@@ -191,7 +191,7 @@ body {
 
 
 .ip_img{
-    border-radius: 10px;
+    border-radius: 15px;
     width: clamp(20em,40vw, 30em);
     height: auto;
     
