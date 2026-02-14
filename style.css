@@ -1,4 +1,7 @@
-/* =========================
+
+
+
+    /* =========================
    Base / Body
 ========================= */
 body {
@@ -71,9 +74,9 @@ body {
 }
 
 .logo_img {
+    
     animation: logo_img 2s ease-out forwards;
-
-    width: 35vw;
+    width: clamp(20em,50vw, 40em);
     height: auto;
 }
 
@@ -90,7 +93,7 @@ body {
 @keyframes logo_img {
     from {
         opacity: 0.8;
-        transform: translateY(80px) scale(0.7);
+        transform: translateY(80px) scale(0.8);
     }
     to {
         opacity: 1;
@@ -372,6 +375,11 @@ body {
     .sec1 {
         margin-top: clamp(20em, 100vw, 160em);
     }
+    .logo_img{
+        width: clamp(20em,50vw, 180em);
+        margin-top: 10em;
+    }
+
 }
 
 /* Medium screens */
@@ -404,6 +412,11 @@ body {
     .fp_content {
         gap: 1em;
     }
+
+    .logo_img{
+         width: clamp(10em,50vw, 40em);
+    }
+     
 
     .card_holder {
         justify-content: left;
