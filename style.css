@@ -147,6 +147,36 @@ body {
     flex-direction: row;
 }
 
+#cart_img{
+  
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 0 0.5em;
+    
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.store_btn{
+   
+    margin: 1em auto;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    
+    padding: 0.5em 2em;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-weight:200;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    height: auto;
+    background-color: rgb(0, 141, 228);
+}
+
+
 .ip_text{
     font-weight: 400;
     font-size: 1em;
@@ -191,7 +221,7 @@ body {
 
 
 .ip_img{
-    border-radius: 15px;
+    border-radius: 10px;
     width: clamp(20em,40vw, 30em);
     height: auto;
     
@@ -201,7 +231,7 @@ body {
 .htp{
     font-size: 1.2em;
     font-weight: 400;
-    margin-top: 5em;
+    margin-top: 4em;
 }
 .card_subject {
     font-weight: 400;
