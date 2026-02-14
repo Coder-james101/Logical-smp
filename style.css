@@ -1,0 +1,338 @@
+/* =========================
+   Base / Body
+========================= */
+body {
+    overflow-x: auto;
+    color: rgb(0, 0, 0);
+    height: 100vh;
+    font-family: "Roboto mono", sans-serif;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+
+    /* Disabled selection options
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;
+    -khtml-user-select: none;    
+    -moz-user-select: none;    
+    -ms-user-select: none;       
+    user-select: none;          
+    cursor: default;
+    */
+}
+
+
+/* =========================
+   Front Page Background Image
+========================= */
+.fp_img_container {
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    text-align: center;
+    align-content: center;
+}
+
+.fp_img {
+    width: auto;
+    height: 100vw;
+    filter: brightness(80%);
+}
+
+
+/* =========================
+   Front Page Content (Logo + Subtitle)
+========================= */
+.fp_content {
+    position: absolute;
+    top: clamp(1em, 20vw, 10em);
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+
+.logo_img {
+    width: 35vw;
+    height: auto;
+}
+
+.front_page_subtitle {
+    color: white;
+    font-weight: 100;
+    font-size: 1.6vw;
+    text-align: center;
+}
+
+
+/* =========================
+   Page Layout Container
+========================= */
+.front_page {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.sec1 {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    left: 0;
+
+    margin-top: clamp(25em, 50vw, 45em);
+    padding-bottom: 10em;
+
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* =========================
+   Cards Section
+========================= */
+.card_holder {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    gap: 5em;
+    margin-top: 5em;
+
+    background-color: transparent;
+}
+
+
+.support_container{
+    
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    gap: 5em;
+    margin-top: 5em;
+    height: auto;
+    width: 100vw;
+
+    background-color: rgb(252, 252, 252);
+}
+
+
+.support_text{
+    font-weight: 200;
+    padding: 0 1em;
+    font-size: 1em;
+}
+.card {
+    width: 20em;
+    height: auto;
+    padding: 1em;
+
+    text-align: center;
+    border-radius: 15px;
+
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.ip_container{
+    justify-content: center;
+   
+    display: flex;
+    gap: 2em;
+    flex-direction: row;
+}
+
+.ip_text{
+    font-weight: 400;
+    font-size: 1em;
+    word-spacing: 0.5em;
+    text-align: left;
+    border: 1px solid rgba(0, 0, 0, 0.195);
+
+    padding: 0.5em;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgb(253, 253, 253);
+}
+
+.text_content_ip{
+    border-radius: 10px;
+    width: 20em;
+    height: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.923);
+}
+
+.text_box{
+   
+    width: auto;
+    height: auto;
+    padding: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.195);
+    color: rgb(49, 184, 0);
+    
+    border-radius: 10px;
+   
+    background-color: rgb(253, 253, 253);
+}
+
+@media (max-width:1000px){
+    .ip_container{
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+.ip_img{
+    border-radius: 10px;
+    width: clamp(20em,40vw, 30em);
+    height: auto;
+    
+}
+
+
+.htp{
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-top: 5em;
+}
+.card_subject {
+    font-weight: 400;
+}
+
+.card_text {
+    font-weight: 200;
+    font-size: 1em;
+}
+
+
+/* =========================
+   Spawn Image Section
+========================= */
+#spawn_img_container {
+    margin-top: 5em;
+    text-align: center;
+    justify-content: center;
+}
+
+#spawn_img {
+    cursor: pointer;
+
+    width: clamp(22em, 60vw, 60em);
+    height: auto;
+
+    border-radius: 15px;
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.316);
+}
+
+
+/* =========================
+   Zoom Modal
+========================= */
+#zoomed_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    background-color: rgba(0, 0, 0, 0.862);
+    z-index: 1000;
+}
+
+#zoomed_img {
+    display: none;
+
+    width: auto;
+    height: 48vw;
+
+    border-radius: 0px;
+}
+
+
+/* =========================
+   Social Section
+========================= */
+.socials_header {
+    margin-top: 3em;
+    text-align: center;
+}
+
+.social_holder {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.social_img {
+    width: clamp(3em, 10vw, 4em);
+    height: auto;
+}
+
+
+/* =========================
+   Responsive Design
+========================= */
+
+/* Large screens */
+@media (min-width: 2500px) {
+    .sec1 {
+        margin-top: clamp(20em, 100vw, 160em);
+    }
+}
+
+/* Medium screens */
+@media (max-width: 900px) {
+    .card_holder {
+        grid-template-columns: repeat(1, max-content);
+    }
+}
+
+/* Small screens */
+@media (max-width: 500px) {
+
+    .fp_content {
+        gap: 6em;
+    }
+
+    .front_page_subtitle {
+        font-size: 3vw;
+        font-weight: 500;
+    }
+
+    .sec1 {
+        margin-top: clamp(5em, 100vw, 160em);
+    }
+}
+
+/* Very small screens */
+@media (max-width: 350px) {
+
+    .fp_content {
+        gap: 1em;
+    }
+
+    .card_holder {
+        justify-content: left;
+    }
+
+    .sec1 {
+        width: 200vw;
+    }
+}
