@@ -46,19 +46,19 @@ function turnHamburgerToHam() {
 
 const menu = document.getElementById("menu");
 
-let pressed = false;
+let menu_pressed = false;
 // Example: trigger on click
 document.getElementById("menu_open_container").addEventListener("click", ()=>{
-    if(!pressed){
+    if(!menu_pressed){
         turnHamburgerToX()
         menu.style.right = "0"
-        pressed = true;
+        menu_pressed = true;
     }
 
     else{
         turnHamburgerToHam()
-        pressed = false;
-        menu.style.right = "100vw"
+        menu_pressed = false;
+        menu.style.right = "1000vw"
     }
  
     
@@ -66,3 +66,23 @@ document.getElementById("menu_open_container").addEventListener("click", ()=>{
 });
 
 
+const team_container = document.getElementById("team_container");
+const hidden_team = document.getElementById("hidden_team");
+
+let team_pressed = false;
+
+team_container.addEventListener("click", ()=>{
+    if(!team_pressed){
+        hidden_team.style.display = "block";
+        team_pressed = true;
+    }
+
+    else{
+        hidden_team.style.display = "none";
+        team_pressed = false;
+
+    }
+ 
+    
+
+});
