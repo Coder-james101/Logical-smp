@@ -75,8 +75,38 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+.team_container{
+    font-weight: 300;
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    cursor: pointer;
+    padding: 0.1em 0em 0.1em 5em;
+    
+    font-size: 1.5em;
+    
+}
+
+#our_team_text{
+
+    text-decoration: underline;
+    
+}
 
 
+#team_container:hover{
+    filter: brightness(98%);
+}
+
+#hidden_team{
+    text-decoration: none;
+    font-size: 0.8em;
+    margin-left: 2%;
+    display: none;
+}
+
+#menu_header{
+    text-align: center;
+}
 
 
 .line {
@@ -87,9 +117,14 @@ body {
     margin: 2px 0;                /* spacing between lines */
 }
 
-
+#menu_margin{
+    width: auto;
+    height: auto;
+    margin-left: 5em;
+}
 
 #menu{
+    
     position: fixed;
     background-color: white;
     right: 1000vw;
